@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.smartchurchattendance.app" version="3.3.6" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Smart Church Mobile</name>
+    <description>Smartchurch Mobile App</description>
+    <author email="onuhvictor1@gmail.com" href="https://smartchurchattendance.com.ng">
+        Onuh Oguche Victor
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <access origin="*" />
+    <allow-navigation href="http://localhost:8080/*" />
+    <!-- <allow-navigation href="*https://smartchurchattendance.com.ng" />
+    <allow-navigation href="*" /> -->
+    <platform name="android">
+        <icon src="res/icon.png" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <allow-intent href="market:*" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <resource-file src="res/android/menu.png" target="app/src/main/res/drawable/menu.png" />
+        <!-- <resource-file src="res/android/back.png" target="app/src/main/res/drawable/back.png" /> -->
+         <preference name="AndroidWindowSplashScreenBackground" value="#6c757d" />
+         <preference name="AndroidPostSplashScreenTheme" value="@style/MyAppTheme" />
+           <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/screen/android/ic_splash_icon.xml" />
+        <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need camera access to take pictures</string>
+        </edit-config>
+    </platform>
+    
+    <application android:allowBackup="false" />
+     <preference name="android-targetSdkVersion" value="33" />
+     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+     <preference name="DisallowOverscroll" value="true" />
+     <preference name="AndroidXEnabled" value="true" />
+     <preference name="StatusBarOverlaysWebView" value="false" />
+     <!-- <preference name="StatusBarBackgroundColor" value="#00000000" /> -->
+     <!-- <preference name="BackgroundColor" value="0xf26c757d"/> -->
+     <preference name="StatusBarBackgroundColor" value="#6c757d" />
+     <preference name="ErrorUrl" value="error.html" />
+     <preference name="cryptoPort" value="8080" />
+     <preference name="SplashScreenDelay" value="3000" />
+     <preference name="SplashStatusBarBackgroundColor" value="#6c757d" />
+     <preference name="SplashNavigationBarBackgroundColor" value="#6c757d" />
+     <preference name="ShowSplashScreenSpinner" value="false" />
+     <preference name="SplashShowOnlyFirstTime" value="false" />
+     <!-- <preference name="TransparentNavigationBar" value="true" />
+     <preference name="TransparentNavigationBarButtonsColor" value="light" /> -->
+</widget>

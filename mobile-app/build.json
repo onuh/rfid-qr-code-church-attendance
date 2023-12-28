@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "smartchurchattendance.keystore",
+            "storePassword": "onuhsmnv55%$@",
+            "alias": "smartchurchattendance",
+            "password" : "bhkjrgih8678#4",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "smartchurchattendance.keystore",
+            "storePassword": "",
+            "alias": "smartchurchattendance",
+            "password" : "bhkjrgih8678#4",
+            "keystoreType": ""
+        }
+    }
+}
