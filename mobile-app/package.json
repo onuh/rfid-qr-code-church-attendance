@@ -1,0 +1,152 @@
+{
+  "name": "com.smartchurchattendance.app",
+  "displayName": "smartchurch",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@globules-io/cordova-plugin-insomnia": "^1.0.1",
+    "@soyalu/cordova-plugin-exitapp": "github:soyalu/cordova-plugin-exitapp",
+    "cordova": "^11.0.0",
+    "cordova-android": "^11.0.0",
+    "cordova-browser": "^6.0.0",
+    "cordova-check-screen-lock": "^0.2.0",
+    "cordova-clipboard": "^1.3.0",
+    "cordova-plugin-actionsheet": "^2.3.3",
+    "cordova-plugin-android-fingerprint-auth": "^1.5.0",
+    "cordova-plugin-android-permissions": "^1.1.5",
+    "cordova-plugin-android-sms-receiver": "^0.0.1",
+    "cordova-plugin-androidx-adapter": "^1.1.3",
+    "cordova-plugin-app-version": "^0.1.14",
+    "cordova-plugin-background-mode": "github:buddypunch-nick/cordova-plugin-background-mode",
+    "cordova-plugin-badge": "^0.8.8",
+    "cordova-plugin-barcode-scanner": "github:ReadyOp/cordova-plugin-barcode-scanner",
+    "cordova-plugin-brightness": "^0.2.0",
+    "cordova-plugin-calendar": "^5.1.6",
+    "cordova-plugin-camera": "^6.0.0",
+    "cordova-plugin-codeplay-share-app-link": "^0.0.3",
+    "cordova-plugin-compat": "^1.2.0",
+    "cordova-plugin-crypt-file": "github:weareu/cordova-plugin-crypt-file",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-dialogs": "github:apache/cordova-plugin-dialogs",
+    "cordova-plugin-downloadmanager": "github:vasani-arpit/cordova-plugin-downloadmanager",
+    "cordova-plugin-exitapp2": "^1.0.4",
+    "cordova-plugin-file": "^7.0.0",
+    "cordova-plugin-file-opener2": "^3.0.5",
+    "cordova-plugin-file-transfer": "github:Priyansu431/cordova-plugin-file-transfer",
+    "cordova-plugin-fingerprint-aio": "^5.0.1",
+    "cordova-plugin-firebase-analytics": "~6.1.0",
+    "cordova-plugin-firebase-messaging": "^6.1.1",
+    "cordova-plugin-flashlight": "github:EddyVerbruggen/Flashlight-PhoneGap-Plugin",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-ia-launch-navigator": "github:NicolaasZA/cordova-plugin-ia-launch-navigator",
+    "cordova-plugin-local-notification": "github:Steffaan/cordova-plugin-local-notifications",
+    "cordova-plugin-native-spinner": "^1.1.4",
+    "cordova-plugin-nativegeocoder": "github:sebastianbaar/cordova-plugin-nativegeocoder",
+    "cordova-plugin-network-information": "github:apache/cordova-plugin-network-information",
+    "cordova-plugin-openwebview": "^1.0.7",
+    "cordova-plugin-permission": "^0.1.0",
+    "cordova-plugin-prevent-screenshot": "^1.0.3",
+    "cordova-plugin-qrcodejs": "github:MenelicSoftware/cordova-plugin-qrcodejs",
+    "cordova-plugin-safariviewcontroller": "^2.0.0",
+    "cordova-plugin-screen-orientation": "^3.0.2",
+    "cordova-plugin-snackbar": "github:GenicsSoftware/cordova-plugin-snackbar",
+    "cordova-plugin-spinner": "github:Justin-Credible/cordova-plugin-spinner",
+    "cordova-plugin-spinner-dialog": "github:Paldom/SpinnerDialog",
+    "cordova-plugin-splashscreen": "github:goinnn/cordova-plugin-splashscreen#4.0.0#colors",
+    "cordova-plugin-statusbar": "^3.0.0",
+    "cordova-plugin-themeablebrowser": "github:nedobylskiy/cordova-plugin-themeablebrowser",
+    "cordova-plugin-vibration": "^3.1.1",
+    "cordova-plugin-x-socialsharing": "^6.0.4",
+    "cordova-plugin-x-toast": "^2.7.3",
+    "cordova-support-android-plugin": "~1.0.0",
+    "cordova.plugins.diagnostic": "^6.1.1",
+    "es6-promise-plugin": "^4.2.2",
+    "phonegap-plugin-mobile-accessibility": "github:phonegap/phonegap-mobile-accessibility",
+    "skwas-cordova-plugin-datetimepicker": "^3.0.2"
+  },
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "true"
+      },
+      "cordova-plugin-device": {},
+      "cordova-plugin-x-toast": {},
+      "cordova-plugin-android-fingerprint-auth": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-camera": {},
+      "cordova-plugin-permission": {},
+      "cordova-plugin-screen-orientation": {},
+      "cordova-plugin-prevent-screenshot": {},
+      "cordova-plugin-firebase-messaging": {
+        "ANDROID_FIREBASE_MESSAGING_VERSION": "22.0.+",
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "phonegap-plugin-mobile-accessibility": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-crypt-file": {},
+      "cordova-plugin-spinner": {},
+      "cordova-plugin-local-notification": {},
+      "cordova-plugin-androidx-adapter": {},
+      "cordova.plugins.diagnostic": {
+        "ANDROIDX_VERSION": "1.0.0",
+        "ANDROIDX_APPCOMPAT_VERSION": "1.3.1"
+      },
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-fingerprint-aio": {},
+      "@globules-io/cordova-plugin-insomnia": {},
+      "cordova-plugin-calendar": {},
+      "cordova-plugin-native-spinner": {},
+      "cordova-check-screen-lock": {},
+      "cordova-plugin-android-permissions": {},
+      "cordova-open-native-settings": {},
+      "cordova-plugin-android-sms-receiver": {},
+      "cordova-plugin-codeplay-share-app-link": {},
+      "skwas-cordova-plugin-datetimepicker": {},
+      "cordova-plugin-file-opener2": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-file": {
+        "ANDROIDX_WEBKIT_VERSION": "1.4.0"
+      },
+      "cordova-plugin-flashlight": {},
+      "cordova-plugin-safariviewcontroller": {},
+      "cordova-plugin-qrcodejs": {},
+      "cordova-plugin-spinner-dialog": {},
+      "cordova-plugin-file-transfer": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-support-android-plugin": {},
+      "cordova-plugin-x-socialsharing": {},
+      "cordova-clipboard": {},
+      "cordova-plugin-brightness": {},
+      "cordova-plugin-app-version": {},
+      "cordova-plugin-downloadmanager": {},
+      "cordova-plugin-themeablebrowser": {},
+      "cordova-plugin-ia-launch-navigator": {
+        "OKHTTP_VERSION": "3.12.0"
+      },
+      "@soyalu/cordova-plugin-exitapp": {},
+      "cordova-plugin-snackbar": {},
+      "cordova-plugin-nativegeocoder": {},
+      "cordova-plugin-background-mode": {},
+      "cordova-plugin-barcode-scanner": {}
+    }
+  },
+  "dependencies": {
+    "cordova-open-native-settings": "1.5.5",
+    "cordova-plugin-web-share": "1.3.0",
+    "jetifier": "^2.0.0"
+  }
+}

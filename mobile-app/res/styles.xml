@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <!-- Declare a new custom main theme. -->
+  <style name="MyAppTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+    <!-- Reference custom styles that should be active for this theme. -->
+    <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    <item name="android:timePickerStyle">@style/MyTimePickerStyle</item>
+  </style>
+
+  <!-- Custom date picker styles. -->
+  <style name="MyDatePickerStyle" parent="android:Widget.Material.DatePicker">
+    <item name="android:datePickerMode">spinner</item>
+  </style>
+
+  <!-- Custom time picker styles. -->
+  <style name="MyTimePickerStyle" parent="android:Widget.Material.TimePicker">
+    <item name="android:timePickerMode">spinner</item>
+  </style>
+</resources>
